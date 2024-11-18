@@ -7,7 +7,6 @@ from movegpt_rag.chat import create_qa_chain
 app = FastAPI()
 
 
-# Initialize retriever and chain
 retriever = get_faiss_retriever(DATA_PATH, settings.openai_api_key, SIMILARITY_THRESHOLD)
 qa_chain = create_qa_chain(retriever, settings.openai_api_key)
 
@@ -15,7 +14,7 @@ qa_chain = create_qa_chain(retriever, settings.openai_api_key)
 def read_root():
     return {"message": "Footura Healthcare RAG API test"}
 
-@app.post("/ask/")
+@app.post("/ask_movegpt/")
 def ask_question(question: str):
     try:
         # Retrieve relevant FAQs
