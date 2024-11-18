@@ -1,2 +1,8 @@
 fastapi[standard]
 uvicorn[standard]
+langchain-community
+pydantic-settings
+openai
+tiktoken
+faiss-cpu
+sentense-transformers

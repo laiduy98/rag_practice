@@ -1,4 +1,4 @@
-# Fine tune LLM model using RAG on health FAQ
+# MoveGPT using RAG fined-tune by FAISS and OpenAI ChatGPT
 -----------------
 
 
