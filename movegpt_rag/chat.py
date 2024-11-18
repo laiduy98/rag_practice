@@ -1,5 +1,5 @@
 from langchain.chains.retrieval_qa.base import RetrievalQA
-from langchain_community.llms import OpenAI
+from langchain_openai import OpenAI
 from langchain.prompts import PromptTemplate
 
 def create_qa_chain(retriever, api_key):
